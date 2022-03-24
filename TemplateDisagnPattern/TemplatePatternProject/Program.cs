@@ -34,11 +34,11 @@ namespace IdentityProject
             identityDbContext.Database.Migrate();
             if (!userManager.Users.Any())
             {
-                userManager.CreateAsync(new AppUser() { UserName = "kul1", Email = "kul1@gmail.com" }, "Password123456!").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "kul2", Email = "kul2@gmail.com" }, "Password123456!").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "kul3", Email = "kul3@gmail.com" }, "Password123456!").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "kul4", Email = "kul4@gmail.com" }, "Password123456!").Wait();
-                userManager.CreateAsync(new AppUser() { UserName = "kul5", Email = "kul5@gmail.com" }, "Password123456!").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "kul1", Email = "kul1@gmail.com", PictureUrl = "1.png", Description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." }, "Password123456!").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "kul2", Email = "kul2@gmail.com", PictureUrl = "1.png", Description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." }, "Password123456!").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "kul3", Email = "kul3@gmail.com", PictureUrl = "1.png", Description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." }, "Password123456!").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "kul4", Email = "kul4@gmail.com", PictureUrl = "1.png", Description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." }, "Password123456!").Wait();
+                userManager.CreateAsync(new AppUser() { UserName = "kul5", Email = "kul5@gmail.com", PictureUrl = "1.png", Description = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." }, "Password123456!").Wait();
             }
         }
     }
